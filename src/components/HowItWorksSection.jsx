@@ -40,7 +40,7 @@ const HowItWorksSection = () => {
             <div className="grid lg:grid-cols-3 gap-8 relative">
               {/* Connecting Lines */}
               <div className="absolute top-16 left-1/3 right-1/3 h-0.5 bg-gradient-to-r from-financial-trust via-financial-growth to-financial-security hidden lg:block" />
-              
+
               {steps.map((step, index) => (
                 <div key={index} className="relative text-center group">
                   {/* Step Number */}

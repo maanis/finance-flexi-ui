@@ -42,7 +42,8 @@ All colors MUST be HSL for proper theming.
     --success-foreground: 0 0% 98%;
 
     /* UI Elements */
-    --border: 220 13% 91%;
+    /* --border: 220 13% 91%; */
+    --border: 240 5% 91%;
     --input: 220 13% 91%;
     --ring: 217 89% 25%;
 

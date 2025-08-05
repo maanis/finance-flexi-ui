@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import Textarea from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
@@ -16,14 +16,14 @@ const ContactSection = () => {
   });
   const { toast } = useToast();
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
@@ -36,12 +36,12 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "Address",
-      details: "123 Financial District, Mumbai - 400001, Maharashtra"
+      details: "Kandivali East, Mumbai - 400001, Maharashtra"
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "+91 9876543210"
+      details: "+91 9920390455"
     },
     {
       icon: Mail,

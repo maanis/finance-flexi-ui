@@ -46,7 +46,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "support@flexichoise.com"
+      details: "support@flexichoice.com"
     },
     {
       icon: Clock,

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Flexi Choise Financial Services Design System
+/* Flexi Choice Financial Services Design System
 All colors MUST be HSL for proper theming.
 */
 
@@ -53,10 +53,27 @@ All colors MUST be HSL for proper theming.
     --financial-support: 271 76% 53%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 89% 25%), hsl(217 89% 35%));
-    --gradient-secondary: linear-gradient(135deg, hsl(45 85% 55%), hsl(45 85% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(217 89% 25%) 0%, hsl(217 89% 30%) 50%, hsl(217 89% 35%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 13% 98%) 100%);
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(217 89% 25%),
+      hsl(217 89% 35%)
+    );
+    --gradient-secondary: linear-gradient(
+      135deg,
+      hsl(45 85% 55%),
+      hsl(45 85% 65%)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(217 89% 25%) 0%,
+      hsl(217 89% 30%) 50%,
+      hsl(217 89% 35%) 100%
+    );
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(0 0% 100%) 0%,
+      hsl(220 13% 98%) 100%
+    );
 
     /* Shadows */
     --shadow-soft: 0 2px 8px hsl(220 15% 15% / 0.08);

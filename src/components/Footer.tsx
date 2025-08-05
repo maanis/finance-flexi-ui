@@ -42,12 +42,12 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-secondary rounded-lg flex items-center justify-center">
                 <CreditCard className="w-5 h-5 text-secondary-foreground" />
               </div>
-              <span className="text-xl font-bold">Flexi Choise</span>
+              <span className="text-xl font-bold">Flexi Choice</span>
             </div>
             <p className="text-background/80 mb-6 leading-relaxed">
               Your trusted partner for all financial needs. We provide comprehensive loan and insurance solutions with transparency and reliability.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
@@ -56,7 +56,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-secondary" />
-                <span className="text-background/80">support@flexichoise.com</span>
+                <span className="text-background/80">support@flexichoice.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-secondary" />
@@ -71,8 +71,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-background/80 hover:text-secondary transition-colors"
                   >
                     {link.name}
@@ -88,8 +88,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a 
-                    href={service.href} 
+                  <a
+                    href={service.href}
                     className="text-background/80 hover:text-secondary transition-colors"
                   >
                     {service.name}
@@ -105,8 +105,8 @@ const Footer = () => {
             <ul className="space-y-3 mb-8">
               {legal.map((item, index) => (
                 <li key={index}>
-                  <a 
-                    href={item.href} 
+                  <a
+                    href={item.href}
                     className="text-background/80 hover:text-secondary transition-colors"
                   >
                     {item.name}
@@ -138,7 +138,7 @@ const Footer = () => {
         <div className="border-t border-background/20 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-background/80 text-sm">
-              © 2024 Flexi Choise. All rights reserved.
+              © 2024 Flexi Choice. All rights reserved.
             </div>
             <div className="text-background/80 text-sm text-center md:text-right">
               <p>IRDAI Registration No. IRDA/DB811/2024</p>

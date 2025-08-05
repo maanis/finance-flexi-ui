@@ -82,43 +82,45 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-muted/30">
+    <section id="services" className="py-20 bg-muted/30 dark:bg-background/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 dark:text-foreground">
             Our Financial Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto dark:text-muted-foreground">
             Comprehensive financial solutions tailored to meet your diverse needs. From loans to insurance, we've got you covered.
           </p>
         </div>
 
         <Tabs defaultValue="loans" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-12 max-w-md mx-auto">
+          <TabsList className="grid w-full grid-cols-2 mb-12 max-w-md mx-auto rounded-xl bg-background/60 dark:bg-background/40 shadow-soft">
             <TabsTrigger value="loans" className="text-lg">Loans</TabsTrigger>
             <TabsTrigger value="insurance" className="text-lg">Insurance</TabsTrigger>
           </TabsList>
 
           <TabsContent value="loans" className="mt-0">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {loanServices.map((service, index) => (
-                <Card key={index} className="group hover:shadow-medium transition-all duration-300 border-border bg-gradient-card">
+                <Card key={index} className="group border-none bg-white/60 dark:bg-background/60 backdrop-blur-xl shadow-soft hover:shadow-primary transition-all duration-300 relative overflow-hidden">
+                  <div className="absolute inset-0 pointer-events-none opacity-30 group-hover:opacity-40 transition-opacity duration-300 rounded-xl"
+                    style={{background: 'radial-gradient(ellipse 80% 60% at 50% 20%, var(--financial-trust), transparent 80%)'}} />
                   <CardHeader className="text-center">
-                    <div className="w-16 h-16 bg-financial-trust/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-financial-trust/20 transition-colors">
+                    <div className="w-16 h-16 bg-financial-trust/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-financial-trust/20 transition-colors shadow-soft">
                       <service.icon className="w-8 h-8 text-financial-trust" />
                     </div>
-                    <CardTitle className="text-xl">{service.title}</CardTitle>
+                    <CardTitle className="text-xl font-semibold dark:text-foreground">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <p className="text-muted-foreground mb-6">{service.description}</p>
+                    <p className="text-muted-foreground mb-6 dark:text-muted-foreground/80">{service.description}</p>
                     <div className="space-y-2 mb-6">
                       {service.features.map((feature, idx) => (
-                        <div key={idx} className="text-sm bg-financial-trust/5 rounded-lg py-2 px-3">
+                        <div key={idx} className="text-sm bg-financial-trust/5 dark:bg-financial-trust/10 rounded-lg py-2 px-3 font-medium">
                           {feature}
                         </div>
                       ))}
                     </div>
-                    <Button variant="financial" className="w-full">
+                    <Button variant="financial" className="w-full font-semibold">
                       Learn More
                     </Button>
                   </CardContent>
@@ -128,25 +130,27 @@ const ServicesSection = () => {
           </TabsContent>
 
           <TabsContent value="insurance" className="mt-0">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {insuranceServices.map((service, index) => (
-                <Card key={index} className="group hover:shadow-medium transition-all duration-300 border-border bg-gradient-card">
+                <Card key={index} className="group border-none bg-white/60 dark:bg-background/60 backdrop-blur-xl shadow-soft hover:shadow-primary transition-all duration-300 relative overflow-hidden">
+                  <div className="absolute inset-0 pointer-events-none opacity-30 group-hover:opacity-40 transition-opacity duration-300 rounded-xl"
+                    style={{background: 'radial-gradient(ellipse 80% 60% at 50% 20%, var(--financial-security), transparent 80%)'}} />
                   <CardHeader className="text-center">
-                    <div className="w-16 h-16 bg-financial-security/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-financial-security/20 transition-colors">
+                    <div className="w-16 h-16 bg-financial-security/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-financial-security/20 transition-colors shadow-soft">
                       <service.icon className="w-8 h-8 text-financial-security" />
                     </div>
-                    <CardTitle className="text-xl">{service.title}</CardTitle>
+                    <CardTitle className="text-xl font-semibold dark:text-foreground">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <p className="text-muted-foreground mb-6">{service.description}</p>
+                    <p className="text-muted-foreground mb-6 dark:text-muted-foreground/80">{service.description}</p>
                     <div className="space-y-2 mb-6">
                       {service.features.map((feature, idx) => (
-                        <div key={idx} className="text-sm bg-financial-security/5 rounded-lg py-2 px-3">
+                        <div key={idx} className="text-sm bg-financial-security/5 dark:bg-financial-security/10 rounded-lg py-2 px-3 font-medium">
                           {feature}
                         </div>
                       ))}
                     </div>
-                    <Button variant="success" className="w-full">
+                    <Button variant="success" className="w-full font-semibold">
                       Get Quote
                     </Button>
                   </CardContent>

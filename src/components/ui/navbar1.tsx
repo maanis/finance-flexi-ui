@@ -56,7 +56,7 @@ interface Navbar1Props {
 const Navbar1 = ({
   logo = {
     url: "#home",
-    title: "Flexi Choise",
+    title: "Flexi Choice",
   },
   menu = [
     { title: "Home", url: "#home" },

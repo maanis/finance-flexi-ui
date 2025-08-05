@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { 
+import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -21,7 +21,7 @@ const Navbar = () => {
               <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
                 <CreditCard className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-foreground">Flexi Choise</span>
+              <span className="text-xl font-bold text-foreground">Flexi Choice</span>
             </div>
           </div>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
               <a href="#home" className="text-foreground hover:text-primary transition-colors">
                 Home
               </a>
-              
+
               {/* Services Dropdown */}
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center text-foreground hover:text-primary transition-colors">

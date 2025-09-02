@@ -98,7 +98,13 @@ const ServiceCard = ({ service, theme }) => {
               </div>
             ))}
           </div>
-          <Button className={`mt-auto w-full inline-flex items-center justify-center px-6 py-3 text-white font-semibold rounded-lg shadow-md transition-all duration-300 ${currentTheme.button} focus:outline-none focus:ring-2 focus:ring-offset-2 ring-white/50`}>
+          <Button 
+            className={`mt-auto w-full inline-flex items-center justify-center px-6 py-3 text-white font-semibold rounded-lg shadow-md transition-all duration-300 ${currentTheme.button} focus:outline-none focus:ring-2 focus:ring-offset-2 ring-white/50`}
+            onClick={() => {
+              const serviceSlug = service.title.toLowerCase().replace(/\s+/g, '-');
+              window.location.href = `/services/${serviceSlug}`;
+            }}
+          >
             {buttonText}
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
